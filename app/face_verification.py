@@ -70,8 +70,8 @@ class VerificationApp(App):
     def verify(self, *args):
 
         # Specify the threshold metrics
-        detection_threshold    = 0.5 
-        verification_threshold = 0.5
+        detection_threshold    = 0.5
+        verification_threshold = 0.8
 
         # Capture image and save it in input folder
         INPUT_PATH = os.path.join('application_data', 'input', 'input_image.jpg')
@@ -108,7 +108,7 @@ class VerificationApp(App):
         verification = detection / len(os.listdir(os.path.join('application_data', 'verification_image')))
         verified = verification > verification_threshold
 
-        self.label.text = 'Verify' if verified == True else 'Unverified'
+        self.label.text = 'Verified' if verified == True else 'Unverified'
 
         Logger.info(detection)
         Logger.info(verification)
