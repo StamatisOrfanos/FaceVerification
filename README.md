@@ -3,7 +3,7 @@
 
 Firstly in order to run this project you have to install the libraries in the requirements.txt files provided in the directory. Given that the requirements are met you have to follow the steps below:
 
-1. Download the data from [University of Massachusetts]([https://duckduckgo.com](http://vis-www.cs.umass.edu/lfw/)http://vis-www.cs.umass.edu/lfw/), where from the many options we used the [GzippedTar File](http://vis-www.cs.umass.edu/lfw/lfw.tgz).
+1. Download the data from [University of Massachusetts](http://vis-www.cs.umass.edu/lfw), where from the many options we used the [GzippedTar File](http://vis-www.cs.umass.edu/lfw/lfw.tgz).
 2. Add the data folder in the same directory.
 3. Run the set_up.py notebook that is going to set up the data structure automatically.
 4. During the execution of the script it will use OpenCv's VideoCapture model to open the camera of your machine. (Default device is 0, which may vary in based on the machine)
